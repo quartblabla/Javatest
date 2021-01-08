@@ -23,7 +23,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 
-public class YoutubeMainPage {
+public class promo_app_login {
 
     public static void main(String[] args) {
 // TODO Auto-generated method stub
@@ -38,7 +38,6 @@ public class YoutubeMainPage {
         driver.findElement(By.name("password")).sendKeys("Zxz123Zxz@");
         driver.findElement(By.cssSelector("#login_form > div.col-md-12.pa-no-padding.pt-top-30 > button.btn.btn-login.ob-padding-0.h-48.ob-line-ht-48.pa-font-bold.pa-font-16")).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.quit();
     }
 
 }
