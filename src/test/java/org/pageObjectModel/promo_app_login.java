@@ -38,6 +38,12 @@ public class promo_app_login {
         driver.findElement(By.name("password")).sendKeys("Zxz123Zxz@");
         driver.findElement(By.cssSelector("#login_form > div.col-md-12.pa-no-padding.pt-top-30 > button.btn.btn-login.ob-padding-0.h-48.ob-line-ht-48.pa-font-bold.pa-font-16")).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        try{ driver.findElement(By.cssSelector("body > div.ng-scope.layout-column.flex > div > div:nth-child(1) > div > md-toolbar.pa-header.pa-header-bg.pa-header-height.mobile-hide.pa-border-E4E4E4._md._md-toolbar-transitions > div > div.pa-display-inline-flex.md-truncate.flex > a > img"));
+            System.out.println("pass");}
+        catch (Exception e){
+            System.out.println("fail");
+        }
+        driver.quit();
     }
 
 }
